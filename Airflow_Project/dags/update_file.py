@@ -12,10 +12,10 @@ default_args={
 
 # create a DAG
 dag = DAG(
-    'update_today_file',
+    'edit_today_file',
     default_args=default_args,
     description='modify today file Dag',
-    schedule_interval='@daily',)
+    schedule_interval=30,)
 
 file_sensor = FileSensor(
     task_id="file_sensor_task",
