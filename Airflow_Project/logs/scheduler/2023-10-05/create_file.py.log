@@ -1,0 +1,75 @@
+[2023-10-05T13:25:40.013+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/create_file.py
+[2023-10-05T13:41:13.631+0000] {processor.py:157} INFO - Started process (PID=93) to work on /opt/airflow/dags/create_file.py
+[2023-10-05T13:41:13.633+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/create_file.py for tasks to queue
+[2023-10-05T13:41:13.636+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:13.636+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/create_file.py
+[2023-10-05T13:41:14.277+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:13.873+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/create_file.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_file.py", line 12, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 458, in __init__
+    raise TypeError("default_args must be a dict")
+TypeError: default_args must be a dict
+[2023-10-05T13:41:14.279+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/create_file.py
+[2023-10-05T13:41:15.653+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/create_file.py took 2.027 seconds
+[2023-10-05T13:44:16.806+0000] {processor.py:157} INFO - Started process (PID=45) to work on /opt/airflow/dags/create_file.py
+[2023-10-05T13:44:16.865+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/create_file.py for tasks to queue
+[2023-10-05T13:44:16.870+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:44:16.870+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/create_file.py
+[2023-10-05T13:44:17.743+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:44:17.252+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/create_file.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_file.py", line 12, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 458, in __init__
+    raise TypeError("default_args must be a dict")
+TypeError: default_args must be a dict
+[2023-10-05T13:44:17.745+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/create_file.py
+[2023-10-05T13:44:18.154+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/create_file.py took 1.387 seconds
+[2023-10-05T14:20:04.975+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/create_file.py
+[2023-10-05T14:20:06.037+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/create_file.py for tasks to queue
+[2023-10-05T14:20:14.426+0000] {logging_mixin.py:151} INFO - [2023-10-05T14:20:08.066+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/create_file.py
+[2023-10-05T14:21:00.004+0000] {logging_mixin.py:151} INFO - [2023-10-05T14:21:00.004+0000] {timeout.py:68} ERROR - Process timed out, PID: 51
+[2023-10-05T14:21:12.857+0000] {logging_mixin.py:151} INFO - [2023-10-05T14:21:01.139+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/create_file.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/create_file.py", line 3, in <module>
+    from airflow.operators.bash_operator import BashOperator
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/deprecation_tools.py", line 56, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 470, in _exit_gracefully
+    self.log.debug("Current Stacktrace is: %s", "\n".join(map(str, inspect.stack())))
+  File "/usr/local/lib/python3.8/inspect.py", line 1526, in stack
+    return getouterframes(sys._getframe(1), context)
+  File "/usr/local/lib/python3.8/inspect.py", line 1503, in getouterframes
+    frameinfo = (frame,) + getframeinfo(frame, context)
+  File "/usr/local/lib/python3.8/inspect.py", line 1477, in getframeinfo
+    lines, lnum = findsource(frame)
+  File "/usr/local/lib/python3.8/inspect.py", line 792, in findsource
+    module = getmodule(object, file)
+  File "/usr/local/lib/python3.8/inspect.py", line 744, in getmodule
+    for modname, module in sys.modules.copy().items():
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/create_file.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.7.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.7.1/best-practices.html#reducing-dag-complexity, PID: 51
+[2023-10-05T14:21:12.907+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/create_file.py

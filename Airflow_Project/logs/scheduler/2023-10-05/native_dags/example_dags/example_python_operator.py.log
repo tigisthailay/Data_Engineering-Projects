@@ -1,0 +1,12 @@
+[2023-10-05T13:41:46.559+0000] {processor.py:157} INFO - Started process (PID=109) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-05T13:41:46.560+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-10-05T13:41:46.565+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:46.564+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-05T13:41:46.596+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-05T13:41:47.056+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:47.056+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-05T13:41:47.211+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:47.210+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-05T13:41:47.378+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:47.377+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-05T13:41:47.380+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:47.379+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:example_python_operator' as access control is unset.
+[2023-10-05T13:41:47.381+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:47.381+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-05T13:41:47.417+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:47.417+0000] {dag.py:2937} INFO - Creating ORM DAG for example_python_operator
+[2023-10-05T13:41:47.418+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:47.418+0000] {dag.py:3696} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-10-05T13:41:47.656+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py took 1.106 seconds

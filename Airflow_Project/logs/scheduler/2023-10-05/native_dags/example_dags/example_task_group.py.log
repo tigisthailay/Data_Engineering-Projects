@@ -1,0 +1,12 @@
+[2023-10-05T13:41:47.687+0000] {processor.py:157} INFO - Started process (PID=110) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2023-10-05T13:41:47.688+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2023-10-05T13:41:47.691+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:47.691+0000] {dagbag.py:539} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2023-10-05T13:41:47.709+0000] {processor.py:839} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2023-10-05T13:41:48.518+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:48.517+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-05T13:41:49.095+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:49.094+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-05T13:41:49.453+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:49.452+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-05T13:41:49.454+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:49.453+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:example_task_group' as access control is unset.
+[2023-10-05T13:41:49.456+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:49.455+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-10-05T13:41:49.497+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:49.497+0000] {dag.py:2937} INFO - Creating ORM DAG for example_task_group
+[2023-10-05T13:41:49.513+0000] {logging_mixin.py:151} INFO - [2023-10-05T13:41:49.513+0000] {dag.py:3696} INFO - Setting next_dagrun for example_task_group to 2023-10-04T13:41:49.513118+00:00, run_after=2023-10-05T13:41:49.513118+00:00
+[2023-10-05T13:41:49.834+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 2.152 seconds
