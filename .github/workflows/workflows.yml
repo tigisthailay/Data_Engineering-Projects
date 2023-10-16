@@ -9,9 +9,24 @@ on:
     types: [opened]
 
 jobs:
-  builds:
+  pre-builds:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Echo GitHub Actions
         run: echo "New issue has been oppened!"
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Echo Build
+        run: sleep 10 && echo "Build lasted for 10 seconds"
+
+  post-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Echo post Build
+        run: echo "Build ended on:" 'date'"
+
