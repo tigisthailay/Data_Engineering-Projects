@@ -1,4 +1,4 @@
-name: First GitHub Action
+name: GitHub Actions
 
 on:
   push:
@@ -28,5 +28,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Echo post Build
-        run: echo "Build ended on:" 'date'"
+        run: echo "Build ended on:" 'date'
 
