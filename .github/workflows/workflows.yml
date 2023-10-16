@@ -5,10 +5,13 @@ on:
     branches:
       - main
 
+  issues:
+    types: [opened]
+
 jobs:
   builds:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Echo GitHub Actions
-        run: echo "Hello GitHub Actions"
+        run: echo "New issue has been oppened!"
