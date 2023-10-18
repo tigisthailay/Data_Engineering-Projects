@@ -1,0 +1,5 @@
+WITH raw_sales AS (
+SELECT * FROM SUPERMARKET.RAW.RAW_SALES
+)
+SELECT *
+FROM raw_sales

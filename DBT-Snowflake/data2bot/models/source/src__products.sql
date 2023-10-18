@@ -1,0 +1,6 @@
+WITH raw_products AS (
+SELECT * FROM SUPERMARKET.RAW.RAW_PRODUCTS
+)
+
+SELECT *
+FROM raw_products
