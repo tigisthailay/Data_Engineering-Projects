@@ -1,0 +1,6 @@
+models:
+ data2bot:
+   dim:
+     +materialized: table
+   source:
+        +materialized: ephemeral
